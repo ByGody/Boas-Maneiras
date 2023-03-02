@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function limpar(){
+        document.getElementById(`txtemail`).style.borderColor=`gray`;
+    }
+    function verf(){
+        var vlemail = document.getElementById(`txtemail`).value;
+        var email = document.getElementById(`txtemail`);
+        limpar();
+        if ( vlemail.indexOf("@") < 0){
+            email.style.borderColor=`gray`;
+            return false;
+        }
+        else{
+            alert(`E-mail enviado com sucesso`);
+            return false;
+        }
+    }
+      </script>
+    <div>
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="box">
+            <input type="hidden" name="accessKey" value="613a0956-78bb-4062-a201-57a59bec0112">
+            <input type="hidden" name="redirectTo" value="https://www.staticforms.xyz/">
+            <h1>Fale conosco</h1>
+            <h2>Adorariamos receber suas sugestões e feedback</h2>
+            <div class="group">
+                <input class="cap txtnome" type="text" id="" name="name" placeholder="Nome">
+                <input class="cap txtemail" type="email" id="txtemail" name="email" placeholder="E-mail">
+                <textarea class="txtplaceholder" name="message" placeholder="Deixe sua opnião"></textarea>
+            </div>
+            <input type="text" name="honeypot" style="display: none;">
+            <button id="cadastrar" value="Cadastrar" onclick="verf()"><a href="contato.html">Enviar Feedback</a></button>
+        </form>
+    </div>
+</body>
+</html>

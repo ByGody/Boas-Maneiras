@@ -1,0 +1,525 @@
+/* ~~ Fonts ~~ */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@900&display=swap");
+
+/* ~~ root ~~ */
+
+:root {
+  --primary-color: #ececec;
+  --secondary-color: #242424;
+  --third-color: #2e2e2e;
+  --background-color-body: #f0f4f7;
+  --background-color-blue: #708bf5;
+  --background-color-pink: #ffcbcb;
+  --emphasis-color: #ffe045;
+}
+
+/* ~~ Page ~~ */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Comfortaa, sans-serif;
+  background-color: var(--background-color-body);
+}
+
+/* ~~ Call ~~ */
+
+.call h1 {
+  padding-top: 4%;
+  margin: auto;
+  width: 85%;
+  text-align: center;
+  font-size: 3.6rem;
+}
+.call h1 b {
+  font-size: 4rem;
+  color: #ac6637;
+}
+.call h2 {
+  padding-top: 4%;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.call h2 b {
+  font-size: 3rem;
+  color: #ac6637;
+}
+.image {
+  width: 100%;
+}
+
+/* ~~ Prblem ~~ */
+
+.problem {
+  background-color: var(--background-color-blue);
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: -0.3%;
+  height: 14rem;
+  display: grid;
+  align-items: center;
+}
+.problem h1 {
+  font-size: 2rem;
+}
+.problem h2 {
+  margin-top: -3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.9rem;
+}
+
+/* ~~ Soluction ~~ */
+.soluction .container {
+  padding-top: 4rem;
+  margin: auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.text {
+  align-self: center;
+}
+.soluction img {
+  width: 70%;
+}
+.soluction .img-1 {
+  grid-column: 1/2;
+}
+.soluction .text-1 {
+  grid-column: 2/4;
+  text-align: left;
+}
+.soluction .text-2 {
+  grid-column: 1/3;
+  text-align: right;
+}
+.soluction .img-2 {
+  grid-column: 3/4;
+}
+
+.soluction h1 {
+  font-size: 2.7rem;
+}
+.soluction h2 {
+  font-size: 2.1rem;
+  padding-top: 3%;
+  color: #1a1a1a;
+}
+.soluction .title {
+  font-size: 2.5rem;
+}
+
+/* ~~ News ~~ */
+
+.news .container {
+  background-color: var(--third-color);
+  margin-top: 2.5rem;
+  height: 13rem;
+  display: grid;
+  align-items: center;
+}
+.news .warning {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 14rem;
+  color: var(--primary-color);
+  text-align: center;
+  display: grid;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.title-notice {
+  padding-top: 1%;
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+}
+.text-notice {
+  color: #3c3c3d;
+  padding-top: 8%;
+}
+.reference {
+  padding-top: 10rem;
+  margin: auto;
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+}
+.reference-1 .img-1 {
+  width: 45%;
+  float: right;
+  padding-top: 8%;
+  margin: 1%;
+}
+.reference-2 {
+  margin-top: 8%;
+}
+.reference-2 .img-2 {
+  width: 45%;
+  left: 55%;
+  padding-top: 8%;
+  float: right;
+  margin: 1%;
+}
+.reference-3 {
+  margin-top: 8%;
+}
+.reference-3 .img-3 {
+  width: 45%;
+  left: 55%;
+  padding-top: 8%;
+  float: right;
+  margin: 1%;
+}
+
+/* ~~ offers ~~ */
+
+.offers {
+  background-image: url(imagens/background-purple.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  height: 75rem;
+  margin-top: 10%;
+}
+.offers .container {
+  padding-top: 10rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.offers .img {
+  height: 60%;
+  width: 60%;
+}
+.offers h1 {
+  font-size: 4.5rem;
+}
+.offers h2 {
+  margin-top: 3%;
+  font-size: 2.8rem;
+}
+.offers b {
+  color: var(--emphasis-color);
+  font-size: 3rem;
+}
+
+/* ~~ book ~~ */
+
+.book {
+  margin-top: 10%;
+}
+.book .container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.book .container h1 {
+  font-size: 3.2rem;
+}
+.book .container h2 {
+  font-size: 2.3rem;
+  margin-top: 3%;
+}
+.grid {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 35% 5% 60%;
+  grid-row-gap: 5%;
+}
+.img-e-book {
+  grid-row: 2/10;
+  width: 100%;
+}
+.grid h1 {
+  grid-column: 2/4;
+}
+.grid .img {
+  grid-column: 2/3;
+  width: 60%;
+}
+.grid .b {
+  grid-column: 3/4;
+  text-align: left;
+}
+
+/* ~~ bonus ~~ */
+
+.bonus {
+  margin-top: 15%;
+}
+.bonus .container {
+  height: 14rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+.bonus .container h1 {
+  width: 80%;
+  margin: auto;
+  font-size: 3rem;
+}
+.bonus .container b {
+  color: var(--emphasis-color);
+  font-size: 3.2rem;
+}
+.center {
+  width: 80%;
+  margin: auto;
+}
+.bonus .content .img-1 {
+  width: 28%;
+  float: right;
+}
+.e-book-1 {
+  margin-top: 5%;
+  text-align: right;
+}
+.e-book-2 {
+  margin-top: 5%;
+  text-align: right;
+}
+.content h1 {
+  padding-top: 6%;
+  font-size: 2.5rem;
+}
+.content h2 {
+  margin-top: 3%;
+  font-size: 2rem;
+}
+.content hr {
+  margin-top: 15%;
+  width: 90%;
+}
+.bonus .btn {
+  margin-top: 10%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.bonus .btn a {
+  color: black;
+  text-decoration: none;
+}
+@font-face {
+  font-family: Gotham;
+  src: url(fonts/GothamRoundedBold.otf);
+}
+.button {
+  background-color: #f7a800;
+  font-family: "Gotham";
+  border: none;
+  cursor: pointer;
+  width: 35rem;
+  height: 7rem;
+  font-weight: 300;
+  border-radius: 2px;
+  font-size: 2rem;
+  transition-property: background-color;
+}
+.button:hover {
+  background-color: #d99402;
+  transition-duration: 0.5s;
+}
+
+/* ~~ Warranty ~~ */
+
+.warranty {
+  margin-top: 10%;
+  font-family: "Noto Sans JP", sans-serif;
+  height: 75rem;
+  background-image: url(imagens/background-purple.png);
+  background-attachment: fixed;
+  width: 100%;
+}
+.warranty .title {
+  padding-top: 5%;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  font-size: 2.3rem;
+  text-align: center;
+  align-self: center;
+}
+.warranty .title b {
+  color: var(--emphasis-color);
+}
+.warranty .oppacity {
+  margin-top: 5%;
+  background-color: #ffffff4b;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 30rem;
+  position: relative;
+}
+.warranty .content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+.warranty .content img {
+  position: absolute;
+  width: 17%;
+  top: 17%;
+  left: 15%;
+}
+.warranty .content h1 {
+  position: absolute;
+  top: -10%;
+  left: 40%;
+}
+.warranty .content h2 {
+  position: absolute;
+  width: 45%;
+  top: 25%;
+  left: 40%;
+}
+.warranty .container .btn {
+  margin-top: 5%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.warranty .container .btn a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ~~ Footer ~~ */
+
+.footer {
+  height: 5rem;
+  background-color: var(--secondary-color);
+  display: grid;
+  align-items: center;
+}
+.footer .container {
+  width: 90%;
+  margin: auto;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.footer .links {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  color: teal;
+}
+
+/*  @mediaQuerrys   */
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 120%;
+  }
+  .button {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 2415px) {
+  .reference-3 .text-notice {
+    padding-top: 13%;
+  }
+  .reference-3 .title-notice {
+    text-align: left;
+  }
+  .reference-3 .img-3 {
+    padding-top: 13%;
+  }
+}
+@media (max-width: 1970px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 1645px) {
+  .reference-3 .text-notice {
+    padding-top: 13%;
+  }
+  .reference-3 .title-notice {
+    text-align: left;
+  }
+  .reference-3 .img-3 {
+    padding-top: 13%;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 25%;
+  }
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 19%;
+  }
+  .reference-3 .text-notice {
+    padding-top: 15%;
+  }
+  .reference-3 .title-notice {
+    text-align: left;
+  }
+  .reference-3 .img-3 {
+    padding-top: 15%;
+  }
+  .offers .img {
+    margin-top: 8%;
+  }
+  .warranty .content img {
+    width: 20%;
+  }
+  .button {
+    font-size: 2rem;
+  }
+  .warranty .container .btn {
+    margin-top: 10%;
+  }
+}
